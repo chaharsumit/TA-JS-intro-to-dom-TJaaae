@@ -2,7 +2,7 @@
 let heading = document.querySelector('h1');
 
 // Check the typeof heading and log it.
-typeof heading;
+console.log(typeof heading);
 
 // Change the color of heading to black.
 heading.style.color = "black";
@@ -44,7 +44,7 @@ document.querySelectorAll('hr .image').forEach(x => {x.style.border = "2px solid
 document.querySelector('.seventeen').style.display = "none";
 
 // Change the border of all the hr element from solid to dashed type
-allHrsArray.forEach(x => {x.style.border = "1px dashed tomato"});
+allHrsArray.forEach(x => {x.style.borderStyle = "dashed"});
 
 // Create a pragraph element and store it in variable named 'para' using `createElement`
 let para = document.createElement('p');
@@ -99,7 +99,7 @@ document.querySelector('.two').append(newPara);
 let newPara2 = document.createElement('p');
 newPara2.innerText = "Prepend inserts as first child";
 
-document.querySelector('.three').append(newPara2);
+document.querySelector('.three').prepend(newPara2);
 
 // Change the border of box 4 to '1px solid black'
 document.querySelector('.four').style.border = "1px solid black";
@@ -135,7 +135,7 @@ let box4 = document.querySelector('.four');
 box4.classList.remove('awesome-box');
 
 // Change the background of the body to bisque
-document.querySelector('body').style.backgroundColor = "bisque";
+document.body.style.backgroundColor = "bisque";
 
 // Create a button and store it in a variable named 'btn'
 let btn = document.createElement('button');
